@@ -15,10 +15,10 @@
 <tr>
 	<td><%=book.title%></td>
 	<td><%=book.body%></td>
-	<td><%= link_to "Show",book_path(book.id),class: "show_#{@book.id}" %></td>
-	<td><%= link_to "Edit",edit_book_path(book.id),class: "edit_#{@book.id}" %>
+	<td><%= link_to "Show",book_path(book.id),class: "show_#{book.id}" %></td>
+	<td><%= link_to "Edit",edit_book_path(book.id),class: "edit_#{book.id}" %>
 </td>
-	<td><%= link_to "Destroy",book_path(book.id),method: :delete, "data-confirm" => "Are you sure?",class: "destroy_#{@book_id}" %></td>
+	<td><%= link_to "Destroy",book_path(book.id),method: :delete, "data-confirm" => "Are you sure?",class: "destroy_#{book.id}" %></td>
 <span><% link_to book.title,book_path(book.id),class: "book_title" %></span>
 
 
